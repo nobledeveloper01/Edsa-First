@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="mycontainer">
+        <h3 class="centerText">Student Form</h3>
+        <div>
+            <form class="center">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name..">
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+
+                <label for="faculty">Faculty</label>
+                <input type="text" id="faculty" name="faculty" placeholder="Your faculty..">
+
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" placeholder="Your department..">
+
+                <input type="button" id="btnSubmit" value="Submit">
+            </form>
+        </div>
+        <div id="showResult">
+            <div style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <th>Input</th>
+                        <th>Number of character</th>
+                        <th>Number of words</th>
+                        <th>Reversed string</th>
+                        <th>Uppercase string</th>
+                        <th>Lowercase string</th>
+                    </tr>
+                    <tr>
+                        <td id="tdfirstName"></td>
+                        <td id="tdfirstNamenumChars"></td>
+                        <td id="tdfirstNamenumWords"></td>
+                        <td id="tdfirstNamereversedString"></td>
+                        <td id="tdfirstNameupperCaseString"></td>
+                        <td id="tdfirstNamelowerCaseString"></td>
+                    </tr>
+                    <tr>
+                        <td id="tdlastName"></td>
+                        <td id="tdlastNamenumChars"></td>
+                        <td id="tdlastNamenumWords"></td>
+                        <td id="tdlastNamereversedString"></td>
+                        <td id="tdlastNameupperCaseString"></td>
+                        <td id="tdlastNamelowerCaseString"></td>
+                    </tr>
+                    <tr>
+                        <td id="tdfaculty"></td>
+                        <td id="tdfacultynumChars"></td>
+                        <td id="tdfacultynumWords"></td>
+                        <td id="tdfacultyreversedString"></td>
+                        <td id="tdfacultyupperCaseString"></td>
+                        <td id="tdfacultylowerCaseString"></td>
+                    </tr>
+                    <tr>
+                        <td id="tddepartment"></td>
+                        <td id="tddepartmentnumChars"></td>
+                        <td id="tddepartmentnumWords"></td>
+                        <td id="tddepartmentreversedString"></td>
+                        <td id="tddepartmentupperCaseString"></td>
+                        <td id="tddepartmentlowerCaseString"></td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
